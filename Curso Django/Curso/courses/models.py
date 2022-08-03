@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.utils import timezone
 
-from simplemooc.core.mail import send_mail_template
+from curso.core.mail import send_mail_template
 
 
 class CourseManager(models.Manager):

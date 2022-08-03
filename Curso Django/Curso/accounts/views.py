@@ -6,8 +6,8 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from django.contrib import messages
 
-from simplemooc.core.utils import generate_hash_key
-from simplemooc.courses.models import Enrollment
+from curso.core.utils import generate_hash_key
+from curso.courses.models import Enrollment
 
 from .forms import RegisterForm, EditAccountForm, PasswordResetForm
 from .models import PasswordReset

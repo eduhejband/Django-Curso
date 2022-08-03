@@ -6,7 +6,7 @@ from django.conf import settings
 
 from model_mommy import mommy
 
-from simplemooc.courses.models import Course
+from curso.courses.models import Course
 
 
 class CourseManagerTestCase(TestCase):

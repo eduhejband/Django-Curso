@@ -1,5 +1,5 @@
 """
-Django settings for simplemooc project.
+Django settings for curso project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -34,9 +34,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'simplemooc.core',
-    'simplemooc.accounts',
-    'simplemooc.courses',
+    'curso.core',
+    'curso.accounts',
+    'curso.courses',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -48,9 +48,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'simplemooc.urls'
+ROOT_URLCONF = 'curso.urls'
 
-WSGI_APPLICATION = 'simplemooc.wsgi.application'
+WSGI_APPLICATION = 'curso.wsgi.application'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -71,7 +71,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'simplemooc', 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'curso', 'media')
 MEDIA_URL = '/media/'
 
 # E-mails
@@ -83,7 +83,7 @@ DEFAULT_FROM_EMAIL = 'Nome <email@gmail.com>'
 # EMAIL_HOST_PASSWORD = 'senha'
 # EMAIL_PORT = 587
 
-CONTACT_EMAIL = 'contato@simplemooc.com'
+CONTACT_EMAIL = 'eduardohejband@gmail.com.br'
 
 # Auth
 LOGIN_URL = 'accounts:login'
@@ -109,6 +109,6 @@ STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
 try:
-    from simplemooc.local_settings import *
+    from curso.local_settings import *
 except ImportError:
     pass

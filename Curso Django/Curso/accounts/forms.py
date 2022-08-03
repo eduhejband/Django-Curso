@@ -2,8 +2,8 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import get_user_model
 
-from simplemooc.core.mail import send_mail_template
-from simplemooc.core.utils import generate_hash_key
+from curso.core.mail import send_mail_template
+from curso.core.utils import generate_hash_key
 
 from .models import PasswordReset
 
